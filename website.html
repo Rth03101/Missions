@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Character Set -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="website.css" />
+
+    <!-- Icon Library (Where the code will pull reference for Icons from) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- link to script-->
+    <script src="script.js" defer></script>
+    <!-- Title of Website -->
+    <title>Workout Program</title>
+  </head>
+
+  <!-- Header -->
+  <header>
+    <!-- Image in Html instead of CSS because it is crucial to website SEOs-->
+    <img
+      src="https://highburyshoppingcentre.co.nz/wp-content/uploads/2022/11/fotor_2023-2-14_17_7_0.png"
+      alt="logo"
+    />
+  </header>
+
+  <body>
+    <!-- div class is used to seperate this button from the other buttons -->
+    <div class="button-container">
+      <a id="longButton" class="btn nav-link" href="#contact-us">Join Today</a>
+    </div>
+    <!-- button bug previously was because of not having specific css for long-button id -->
+    <!-- Navigation (nav) -->
+
+    <!--prettier-ignore-->
+    <nav>
+      <!-- Unordered list (best use case when items in list are not in a sequence/hierarchy)-->
+      <ul>
+        <!-- li (list) bt (button) a(works as an "anchor" to the destination (think chain link) )-->
+        <li class="btn nav-link"><a href="#">Classes</a></li>
+        <li class="btn nav-link"><a href="#">Timetable</a></li>
+        <li class="btn nav-link"><a href="#">About us</a></li>
+        <li class="btn nav-link"><a href="#workoutProgram">Workout Program</a></li>
+        <li class="btn nav-link"><a href="#contact-us">Contact us</a></li>
+        <li class="btn nav-link"><a href="#">Book Free Trial</a></li>
+      </ul>
+    </nav>
+
+    <!-- The Main Section/Body-->
+
+    <!--Gallery-->
+
+    <div class="selected-image-container">
+      <button class="arrow" id="left-arrow">&lt;</button>
+      <!-- "&lt;" creates unicode used to represent "<"" which would otherwise
+        be read as the start of a tag -->
+      <img id="selected-image" src="images/gym-1.jpg" alt="Selected Photo" />
+      <button class="arrow" id="right-arrow">&gt;</button>
+    </div>
+    <p id="image-name">Gym-1 Image credit: robertcleoncio@yahoo.com.ph</p>
+    <div class="thumbnail-container">
+      <img class="thumbnail" src="images/gym-1.jpg" alt="Gym 1" />
+      <img class="thumbnail" src="images/gym-2.jpg" alt="Gym 2" />
+      <img class="thumbnail" src="images/gym-3.jpg" alt="Gym 3" />
+      <img class="thumbnail" src="images/gym-4.jpg" alt="Gym 4" />
+      <img class="thumbnail" src="images/gym-5.jpg" alt="Gym 5" />
+      <img class="thumbnail" src="images/gym-6.jpg" alt="Gym 6" />
+      <img class="thumbnail" src="images/gym-7.jpg" alt="Gym 7" />
+      <img class="thumbnail" src="images/gym-8.jpg" alt="Gym 8" />
+      <img class="thumbnail" src="images/gym-9.jpg" alt="Gym 9" />
+      <img class="thumbnail" src="images/gym-10.jpg" alt="Gym 10" />
+    </div>
+
+    <main>
+      <!-- No longer ID class identifier is better in this case-->
+      <!-- No longer paragraph tag but unordered list -->
+      <section class="workout-day">
+        <ul>
+          <li><h1>Workout #1</h1></li>
+          <br />
+          <li>Back Squat</li>
+          <li>Stiff-Leg Deadlift</li>
+          <li>Dumbbell Walking Lunge</li>
+          <li>Seated Leg Curl</li>
+          <li>Standing Calf Raise</li>
+          <li>Cable Crunch</li>
+        </ul>
+      </section>
+
+      <section class="workout-day" id="workoutProgram">
+        <ul>
+          <li><h1>Workout #2</h1></li>
+          <br />
+          <li>Barbell Bench Press</li>
+          <li>Lat Pulldown</li>
+          <li>Barbell Overhead Press</li>
+          <li>Seated T-Bar Row</li>
+          <li>Pause Dumbbell Incline curl</li>
+          <li>Overhead Tricep cable</li>
+          <li>Hammer Curl</li>
+        </ul>
+      </section>
+
+      <section class="workout-day">
+        <ul>
+          <li><h1>Workout #3</h1></li>
+          <br />
+          <li>Deadlift</li>
+          <li>Back Squat</li>
+          <li>Barbell Hip Thrust</li>
+          <li>Leg Extension</li>
+          <li>Lying Leg Curl</li>
+          <li>Single Leg Calf Raises</li>
+        </ul>
+      </section>
+
+      <section class="workout-day">
+        <ul>
+          <li><h1>Workout #4</h1></li>
+          <br />
+          <li>Wide-Grip Pull-Up</li>
+          <li>Barbell Incline Press</li>
+          <li>Machine Row</li>
+          <li>Cable Fly</li>
+          <li>Machine Lateral Raise</li>
+          <li>Supinated Dumbbell Curl</li>
+          <li>Hammer Curl</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Contact Us form -->
+    <div class="contact-container">
+      <h2 id="contact-us">Get in Touch</h2>
+      <p class="sub-heading">
+        Have a question, comment, or feedback? We would love to hear from you!
+      </p>
+
+      <form action="">
+        <div class="top-section">
+          <div class="group">
+            <label for="fullname">Your Name</label>
+            <div class="input-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+              <input type="text" id="fullname" placeholder="Name" />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="email">Your Email</label>
+            <div class="input-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                />
+              </svg>
+              <input type="text" id="email" placeholder="mailto@email.com" />
+            </div>
+          </div>
+        </div>
+
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea placeholder="Type Here..." name="" id="message"></textarea>
+        </div>
+
+        <div class="btn-container">
+          <input type="submit" value="Send" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+            />
+          </svg>
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <footer>
+    <h3>
+      Copyright 2026 All rights reserved. (Not really for study purposes only
+      (pls dont sue me Cityfitness)).
+    </h3>
+  </footer>
+</html>
